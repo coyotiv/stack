@@ -69,7 +69,7 @@ These commands run the individual `lint` and `lint-staged` scripts in both the `
 
 MIT License
 
-Copyright (c) 2020 Armagan Amcalar
+Copyright (c) 2020 Coyotiv®
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
