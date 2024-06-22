@@ -1,11 +1,14 @@
-FROM node:14
+FROM node:21-alpine
 
 WORKDIR /app
 
-ADD package.json package-lock.json ./
+ADD package.json ./ 
 
 RUN npm install
 
-ADD .browserslistrc .prettierrc .eslintrc.js babel.config.js vue.config.js ./
+ADD .eslintrc.cjs .prettierrc.json env.d.ts  index.html  tsconfig.node.json  tsconfig.app.json  vite.config.ts  .env  ./
 
-CMD [ "npm", "run", "serve" ]
+VOLUME [ "/app/src" ]
+VOLUME [ "/app/public" ]
+
+CMD [ "npm", "run", "dev" ]
